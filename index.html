@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial do Quiz</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Página Inicial -->
+  <div class="quiz-container">
+    <div id="start-screen" class="content text-center">
+      <h1 class="quiz-title">Bem-vindo ao QUIZ Marrabs</h1>
+      <p class="quiz-subtitle">Selecione o nível para começar</p>
+
+      <!-- Campo de seleção (Combobox) -->
+      <div class="form-group mt-4">
+        <select id="level-select" class="form-select form-select-lg" aria-label="Selecionar nível">
+          <option value="" disabled selected>Escolha o nível</option>
+          <option value="facil">Fácil</option>
+          <option value="intermediario">Intermediário</option>
+          <option value="dificil">Difícil</option>
+        </select>
+      </div>
+
+      <!-- Botão de Início -->
+      <button id="start-btn" class="btn btn-primary btn-lg mt-4" disabled>Começar</button>
+    </div>
+
+    <!-- Tela de Perguntas -->
+    <div id="quiz-screen" class="content text-center d-none">
+      <h2 id="question-title" class="quiz-title">Pergunta aqui</h2>
+      <ul id="answers-list" class="list-group mt-4">
+        <!-- As opções serão adicionadas dinamicamente -->
+      </ul>
+
+      <!-- Botões de ajuda -->
+      <div class="help-buttons mt-4">
+        <button id="skip-btn" class="btn btn-warning me-2">Pular Questão</button>
+        <button id="hint-btn" class="btn btn-info">Sugestão de Resposta</button>
+      </div>
+    </div>
+
+    <!-- Tela de Resultados -->
+    <div id="result-screen" class="content text-center d-none">
+      <h1 class="quiz-title">Resultados</h1>
+      <p class="quiz-subtitle">Você acertou <span id="score">0</span> de <span id="total-questions">0</span> perguntas!</p>
+      <button id="restart-btn" class="btn btn-success btn-lg mt-4">Recomeçar</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial do Quiz</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Página Inicial -->
+  <div class="quiz-container">
+    <div id="start-screen" class="content text-center">
+      <h1 class="quiz-title">Bem-vindo ao QUIZ Marrabs</h1>
+      <p class="quiz-subtitle">Selecione o nível para começar</p>
+
+      <!-- Campo de seleção (Combobox) -->
+      <div class="form-group mt-4">
+        <select id="level-select" class="form-select form-select-lg" aria-label="Selecionar nível">
+          <option value="" disabled selected>Escolha o nível</option>
+          <option value="facil">Fácil</option>
+          <option value="intermediario">Intermediário</option>
+          <option value="dificil">Difícil</option>
+        </select>
+      </div>
+
+      <!-- Botão de Início -->
+      <button id="start-btn" class="btn btn-primary btn-lg mt-4" disabled>Começar</button>
+    </div>
+
+    <!-- Tela de Perguntas -->
+    <div id="quiz-screen" class="content text-center d-none">
+      <h2 id="question-title" class="quiz-title">Pergunta aqui</h2>
+      <ul id="answers-list" class="list-group mt-4">
+        <!-- As opções serão adicionadas dinamicamente -->
+      </ul>
+
+      <!-- Botões de ajuda -->
+      <div class="help-buttons mt-4">
+        <button id="skip-btn" class="btn btn-warning me-2">Pular Questão</button>
+        <button id="hint-btn" class="btn btn-info">Sugestão de Resposta</button>
+      </div>
+    </div>
+
+   
+    <!-- Tela de Resultados -->
+<div id="result-screen" class="content text-center d-none">
+  <h1 class="quiz-title">Resultados</h1>
+  
+  <!-- Exibição do Score -->
+  <p class="quiz-subtitle mt-4">Score: <span id="score">0</span></p>
+  
+  <!-- Exibição de Acertos -->
+  <p class="quiz-subtitle">Acertaste <span id="correct-answers">0</span> de <span id="total-questions">0</span> perguntas!</p>
+  
+  <button id="restart-btn" class="btn btn-success btn-lg mt-4">Recomeçar</button>
+</div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>

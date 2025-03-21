@@ -1,0 +1,108 @@
+/* Estilo Global */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+}
+
+body {
+  background: chocolate;
+}
+
+/* Fundo Temático */
+.quiz-container {
+  background-image: url('https://source.unsplash.com/1600x900/?quiz,education');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Conteúdo Centralizado */
+.content {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+.quiz-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Subtítulo */
+.quiz-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Combobox */
+.form-select {
+  max-width: 200px; /* Reduzimos a largura */
+  margin: 0 auto;
+  font-size: 1rem; /* Reduzimos o tamanho da fonte */
+}
+
+/* Botão */
+#start-btn,
+#next-btn,
+#restart-btn {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+#start-btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Esconde telas que não estão ativas */
+.d-none {
+  display: none;
+}
+
+/* Lista de Respostas */
+.list-group-item {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Tela de Resultados */
+#result-screen .quiz-title {
+  font-size: 2.5rem;
+  color: limegreen;
+}
+
+.quiz-score {
+  font-size: 2rem;
+  color: white;
+  margin: 20px 0;
+}
+
+.quiz-feedback {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+
